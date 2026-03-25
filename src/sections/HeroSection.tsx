@@ -164,7 +164,7 @@ const HeroSection = ({ className = '' }: HeroSectionProps) => {
           ref={subheadlineRef}
           className="font-body text-lg md:text-xl text-ignum-gray max-w-md mb-10 leading-relaxed"
         >
-          La próxima ventaja en IA no es el modelo — es el control sobre dónde corre. Construye sobre infraestructura soberana en México.
+          The next AI advantage is not the model. It is control over where it runs. Build on sovereign infrastructure in Latin America.
         </p>
 
         {/* CTAs */}
