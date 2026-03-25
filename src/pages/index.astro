@@ -1,0 +1,220 @@
+---
+import Base from '../layouts/Base.astro';
+---
+
+<Base>
+  <!-- Navigation -->
+  <nav class="fixed top-0 left-0 right-0 z-50 border-b border-white/5 bg-ignum-black/95 backdrop-blur-sm">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12 py-5 flex items-center justify-between">
+      <a href="/" class="font-display text-lg font-bold text-ignum-offwhite tracking-tight">IGNUM</a>
+      <div class="hidden lg:flex items-center gap-8">
+        <a href="/infrastructure" class="font-mono text-xs uppercase tracking-widest text-ignum-gray hover:text-ignum-offwhite transition-colors">Infrastructure</a>
+        <a href="/solutions" class="font-mono text-xs uppercase tracking-widest text-ignum-gray hover:text-ignum-offwhite transition-colors">Solutions</a>
+        <a href="/about" class="font-mono text-xs uppercase tracking-widest text-ignum-gray hover:text-ignum-offwhite transition-colors">About</a>
+        <a href="/access" class="font-mono text-xs uppercase tracking-widest text-ignum-gray hover:text-ignum-offwhite transition-colors">Access</a>
+        <a href="/contact" class="font-mono text-xs uppercase tracking-widest text-ignum-gray hover:text-ignum-offwhite transition-colors">Contact</a>
+        <span class="flex items-center gap-1.5 font-mono text-xs text-ignum-copper">
+          <span class="w-1.5 h-1.5 rounded-full bg-ignum-copper animate-pulse"></span>
+          TommyAI
+        </span>
+        <a href="/access" class="font-mono text-xs uppercase tracking-widest px-4 py-2 border border-ignum-copper text-ignum-copper hover:bg-ignum-copper hover:text-ignum-black transition-colors">
+          Request Briefing
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="min-h-screen flex flex-col justify-center px-8 md:px-16 lg:px-24 pt-24">
+    <div class="max-w-7xl mx-auto w-full">
+      <p class="font-mono text-xs uppercase tracking-[0.2em] text-ignum-copper mb-6">Sovereign AI Infrastructure · Celaya, Guanajuato · Mexico</p>
+      <h1 class="font-display text-5xl md:text-6xl lg:text-7xl font-bold text-ignum-offwhite leading-[0.95] tracking-tight mb-6">
+        Sovereign Intelligence<br />
+        <span class="text-transparent bg-clip-text" style="background-image: linear-gradient(135deg, #B87333, #D4A574);">Infrastructure.</span>
+      </h1>
+      <p class="font-body text-lg md:text-xl text-ignum-gray max-w-2xl leading-relaxed mb-10">
+        Private AI training, inference, and deployment on controlled regional infrastructure for governments, enterprises, and strategic capital.
+      </p>
+      <div class="flex flex-wrap gap-4 mb-16">
+        <a href="/access" class="font-mono text-sm px-6 py-3 bg-ignum-copper text-ignum-black hover:bg-ignum-copper-light transition-colors flex items-center gap-2">
+          Request Private Briefing →
+        </a>
+        <a href="/infrastructure" class="font-mono text-sm text-ignum-gray hover:text-ignum-copper transition-colors underline underline-offset-4">
+          Explore Infrastructure
+        </a>
+      </div>
+
+      <!-- Key metrics -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 border-t border-ignum-offwhite/10 pt-8">
+        <div>
+          <p class="font-display text-3xl font-bold text-ignum-copper">7.3 MW</p>
+          <p class="font-mono text-xs uppercase tracking-wider text-ignum-gray mt-1">Trigeneración operational</p>
+        </div>
+        <div>
+          <p class="font-display text-3xl font-bold text-ignum-copper">4× H200</p>
+          <p class="font-mono text-xs uppercase tracking-wider text-ignum-gray mt-1">SXM5 141GB deploying</p>
+        </div>
+        <div>
+          <p class="font-display text-3xl font-bold text-ignum-copper">15,000 m²</p>
+          <p class="font-mono text-xs uppercase tracking-wider text-ignum-gray mt-1">Pilot campus · 23 ha ready</p>
+        </div>
+        <div>
+          <p class="font-display text-3xl font-bold text-ignum-copper">100 MW</p>
+          <p class="font-mono text-xs uppercase tracking-wider text-ignum-gray mt-1">Expansion pathway locked</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Infrastructure section — fully static HTML -->
+  <section id="infrastructure" class="py-24 px-8 md:px-16 lg:px-24 border-t border-ignum-offwhite/10">
+    <div class="max-w-7xl mx-auto">
+      <p class="font-mono text-xs uppercase tracking-[0.2em] text-ignum-copper mb-4">Real Infrastructure · Not a Greenfield Story</p>
+      <h2 class="font-display text-4xl md:text-5xl font-bold text-ignum-offwhite mb-6">The hard part is already done.</h2>
+      <p class="font-body text-ignum-gray max-w-3xl leading-relaxed mb-12">
+        We operate from Parque Industrial Cuadritos, Celaya, Guanajuato. 15,000 m² pilot campus deployed within 23 hectares available for immediate expansion. Currently deploying 4× NVIDIA H200 SXM5 141GB HBM3e and operating 7.3 MW of trigeneration with structural capacity to scale to 100 MW.
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        {[
+          { status: 'LIVE NOW', title: 'Pilot Campus', lines: ['Parque Industrial Cuadritos, Celaya', '15,000 m² deployed', '23 ha expansion ready'] },
+          { status: 'LIVE NOW', title: 'Energy', lines: ['7.3 MW trigeneración operational', '25 km private gas pipeline', '20 MVA own substation'] },
+          { status: 'LIVE NOW', title: 'Utilities', lines: ['3 industrial wells', 'PTAR 1,500 m³/day', 'Cooling for high-density AI'] },
+          { status: 'IN DEPLOYMENT', title: 'Compute', lines: ['4× NVIDIA H200 SXM5 141GB HBM3e', 'Properties directly owned', 'Phase 1 target: 2 MW IT load'] },
+          { status: 'MEASURED', title: 'Connectivity', lines: ['Querétaro: 5–12 ms (Feb 2026)', 'CDMX: 18–28 ms (Feb 2026)', 'Dallas: 42–55 ms (Feb 2026)'] },
+          { status: 'PLANNED', title: 'Expansion', lines: ['2 MW IT → 8 MW IT → 15 MW IT', 'Scalable to 100 MW', 'Pathway locked · Execution gated'] },
+        ].map(card => (
+          <div class="p-6 border border-white/10 hover:border-yellow-700/40 transition-colors">
+            <div class="flex justify-between items-center mb-3">
+              <span class="font-mono text-xs uppercase tracking-wider text-gray-400">{card.title}</span>
+              <span class={`font-mono text-[9px] uppercase tracking-widest ${card.status === 'LIVE NOW' ? 'text-green-500' : card.status === 'IN DEPLOYMENT' ? 'text-yellow-600' : card.status === 'MEASURED' ? 'text-yellow-700' : 'text-gray-500'}`}>{card.status}</span>
+            </div>
+            {card.lines.map(line => <p class="font-mono text-xs text-white/80 mb-1">{line}</p>)}
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Solutions -->
+  <section id="solutions" class="py-24 px-8 md:px-16 lg:px-24 border-t border-ignum-offwhite/10 bg-white/[0.02]">
+    <div class="max-w-7xl mx-auto">
+      <p class="font-mono text-xs uppercase tracking-[0.2em] text-ignum-copper mb-4">Commercial Model</p>
+      <h2 class="font-display text-4xl font-bold text-ignum-offwhite mb-10">What we offer</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        {[
+          { title: 'Industrial Tier III', price: '$145–160 /kW-mes', desc: 'HPC/AI Colocation · Energy + CaaS + SLA included' },
+          { title: 'HPC Premium liquid-ready', price: '$165–195 /kW-mes', desc: 'Liquid loop + NVIDIA-ready + low latency' },
+          { title: 'Private Inference Environments', price: 'By request', desc: 'Secure environments for confidential AI workflows' },
+          { title: 'Custom Model Deployment', price: 'Custom', desc: 'Proprietary and adapted model operations' },
+          { title: 'Private Training Environments', price: 'Enterprise', desc: 'Sensitive development and model iteration' },
+          { title: 'Sovereign Stack Advisory', price: 'Advisory', desc: 'Long-term AI capability architecture' },
+        ].map(s => (
+          <div class="p-6 border border-white/10 hover:border-yellow-700/40 transition-colors">
+            <h3 class="font-display text-base font-bold text-white mb-1">{s.title}</h3>
+            <span class="font-mono text-xs text-yellow-700 border border-yellow-700/30 px-2 py-0.5 inline-block mb-3">{s.price}</span>
+            <p class="font-body text-sm text-gray-400">{s.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Why IGNUM -->
+  <section class="py-24 px-8 md:px-16 lg:px-24 border-t border-ignum-offwhite/10">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16">
+      <div>
+        <p class="font-mono text-xs uppercase tracking-[0.2em] text-ignum-copper mb-4">Why sovereign infrastructure now</p>
+        <h2 class="font-display text-4xl font-bold text-ignum-offwhite mb-6">Infrastructure is the strategic layer.</h2>
+        <p class="font-body text-ignum-gray leading-relaxed mb-4">
+          The next AI advantage will not belong only to better models. It will belong to those who control where intelligence runs, how it is deployed, and under whose jurisdiction it operates.
+        </p>
+        <p class="font-body text-ignum-gray leading-relaxed">
+          IGNUM provides the infrastructure layer for organizations that cannot outsource intelligence control — governments, enterprises, family offices, industrial groups, and AI-native ventures.
+        </p>
+      </div>
+      <div class="grid grid-cols-2 gap-4">
+        {[
+          { label: 'Mexican jurisdiction', desc: 'MLAT-only data access framework' },
+          { label: 'Energy-first', desc: '~$0.038/kWh structural cost advantage' },
+          { label: 'Private by design', desc: 'No CLOUD Act dependency' },
+          { label: 'Regional latency', desc: '5–12 ms to Querétaro measured' },
+        ].map(item => (
+          <div class="p-4 border border-white/10">
+            <p class="font-mono text-xs text-yellow-700 uppercase tracking-wider mb-1">{item.label}</p>
+            <p class="font-body text-sm text-gray-400">{item.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Built for -->
+  <section class="py-24 px-8 md:px-16 lg:px-24 border-t border-ignum-offwhite/10 bg-white/[0.02]">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="font-display text-4xl font-bold text-ignum-offwhite mb-10">Built for organizations that cannot outsource intelligence control.</h2>
+      <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+        {['Governments & Institutions', 'Enterprises', 'Family Offices', 'Industrial Groups', 'AI-Native Ventures'].map(s => (
+          <div class="p-5 border border-white/10 hover:border-yellow-700/40 transition-colors">
+            <p class="font-mono text-xs text-white">{s}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-24 px-8 md:px-16 lg:px-24 border-t border-ignum-offwhite/10 text-center">
+    <div class="max-w-3xl mx-auto">
+      <p class="font-mono text-xs uppercase tracking-[0.2em] text-ignum-copper mb-4">Strategic Access</p>
+      <h2 class="font-display text-4xl md:text-5xl font-bold text-ignum-offwhite mb-6">
+        Bring your AI workload<br />to sovereign ground.
+      </h2>
+      <p class="font-body text-ignum-gray leading-relaxed mb-10 max-w-xl mx-auto">
+        If your organization is evaluating private AI infrastructure, controlled deployment, or sovereign capability in Latin America, IGNUM offers a direct path to a confidential discussion.
+      </p>
+      <div class="flex gap-4 justify-center flex-wrap">
+        <a href="/access" class="font-mono text-sm px-8 py-4 bg-ignum-copper text-ignum-black hover:bg-ignum-copper-light transition-colors">
+          Request Private Briefing
+        </a>
+        <a href="/contact" class="font-mono text-sm px-8 py-4 border border-white/20 text-ignum-gray hover:border-yellow-700/40 hover:text-ignum-offwhite transition-colors">
+          Contact
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-ignum-offwhite/10 px-8 md:px-16 lg:px-24 py-12">
+    <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
+      <div>
+        <p class="font-display text-sm font-bold text-ignum-offwhite mb-2">IGNUM</p>
+        <p class="font-mono text-xs text-ignum-gray/50 leading-relaxed">Private AI infrastructure for Latin America.</p>
+      </div>
+      <div>
+        <p class="font-mono text-[9px] uppercase tracking-wider text-ignum-gray/40 mb-3">Navigation</p>
+        {[['/', 'Home'], ['/infrastructure', 'Infrastructure'], ['/solutions', 'Solutions'], ['/about', 'About'], ['/access', 'Strategic Access'], ['/contact', 'Contact']].map(([href, label]) => (
+          <a href={href} class="block font-mono text-xs text-ignum-gray/60 hover:text-ignum-copper transition-colors mb-1">{label}</a>
+        ))}
+      </div>
+      <div>
+        <p class="font-mono text-[9px] uppercase tracking-wider text-ignum-gray/40 mb-3">Access</p>
+        {[['/access', 'Request Private Briefing'], ['/access', 'Request Access'], ['/contact', 'Deployment Inquiry']].map(([href, label], i) => (
+          <a href={href} class="block font-mono text-xs text-ignum-gray/60 hover:text-ignum-copper transition-colors mb-1">{label}</a>
+        ))}
+      </div>
+      <div>
+        <p class="font-mono text-[9px] uppercase tracking-wider text-ignum-gray/40 mb-3">Legal</p>
+        {[['/privacy', 'Privacy Policy'], ['/terms', 'Terms of Use'], ['/cookies', 'Cookies']].map(([href, label]) => (
+          <a href={href} class="block font-mono text-xs text-ignum-gray/60 hover:text-ignum-copper transition-colors mb-1">{label}</a>
+        ))}
+        <a href="mailto:tommy@ignumprotocol.com" class="block font-mono text-xs text-ignum-copper mt-3">tommy@ignumprotocol.com</a>
+      </div>
+    </div>
+    <div class="border-t border-ignum-offwhite/5 pt-6 flex flex-col md:flex-row justify-between gap-2">
+      <p class="font-mono text-[9px] text-ignum-gray/30 uppercase tracking-wider">© 2026 IGNUM Protocol SAPI de CV. All rights reserved.</p>
+      <p class="font-mono text-[9px] text-ignum-gray/30">Sovereign Intelligence Infrastructure for Latin America.</p>
+      <p class="font-mono text-[9px] text-ignum-gray/30">Mexican operating framework.</p>
+    </div>
+  </footer>
+</Base>

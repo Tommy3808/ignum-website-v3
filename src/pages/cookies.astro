@@ -1,0 +1,43 @@
+---
+import Base from '../layouts/Base.astro';
+const titles = {
+  infrastructure: 'Infrastructure | IGNUM Protocol',
+  solutions: 'Solutions | IGNUM Protocol',
+  access: 'Strategic Access | IGNUM Protocol',
+  about: 'About | IGNUM Protocol',
+  contact: 'Contact | IGNUM Protocol',
+  privacy: 'Privacy Policy | IGNUM Protocol',
+  terms: 'Terms of Use | IGNUM Protocol',
+  cookies: 'Cookies | IGNUM Protocol',
+};
+---
+<Base title={titles['cookies']} path="/cookies">
+  <nav class="fixed top-0 left-0 right-0 z-50 border-b border-white/5 bg-ignum-black/95 backdrop-blur-sm">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12 py-5 flex items-center justify-between">
+      <a href="/" class="font-display text-lg font-bold text-ignum-offwhite tracking-tight">IGNUM</a>
+      <div class="hidden lg:flex items-center gap-8">
+        <a href="/infrastructure" class="font-mono text-xs uppercase tracking-widest text-ignum-gray hover:text-ignum-offwhite transition-colors">Infrastructure</a>
+        <a href="/solutions" class="font-mono text-xs uppercase tracking-widest text-ignum-gray hover:text-ignum-offwhite transition-colors">Solutions</a>
+        <a href="/about" class="font-mono text-xs uppercase tracking-widest text-ignum-gray hover:text-ignum-offwhite transition-colors">About</a>
+        <a href="/access" class="font-mono text-xs uppercase tracking-widest text-ignum-gray hover:text-ignum-offwhite transition-colors">Access</a>
+        <a href="/contact" class="font-mono text-xs uppercase tracking-widest text-ignum-gray hover:text-ignum-offwhite transition-colors">Contact</a>
+        <a href="/access" class="font-mono text-xs uppercase tracking-widest px-4 py-2 border border-ignum-copper text-ignum-copper hover:bg-ignum-copper hover:text-ignum-black transition-colors">
+          Request Briefing
+        </a>
+      </div>
+    </div>
+  </nav>
+  <div class="pt-24 px-8 md:px-16 lg:px-24 max-w-5xl mx-auto py-24">
+    <p class="font-mono text-xs uppercase tracking-wider text-ignum-copper mb-4">cookies</p>
+    <h1 class="font-display text-5xl font-bold text-ignum-offwhite mb-8">
+      <!-- Content will be added per page -->
+      Cookies
+    </h1>
+    <p class="font-body text-ignum-gray leading-relaxed">
+      Contacting: <a href="mailto:tommy@ignumprotocol.com" class="text-ignum-copper">tommy@ignumprotocol.com</a>
+    </p>
+    <div class="mt-8">
+      <a href="/access" class="font-mono text-sm px-6 py-3 bg-ignum-copper text-ignum-black hover:bg-ignum-copper-light transition-colors inline-flex items-center gap-2">Request Private Briefing →</a>
+    </div>
+  </div>
+</Base>
